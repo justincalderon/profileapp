@@ -1,0 +1,33 @@
+body {
+  margin: auto;
+}
+
+#div1 {
+  background-color: firebrick;
+  height: 100%;
+}
+
+#div2 {
+  background-color: gold;
+  height: 150px;
+}
+
+#div3 {
+  background-color: coral;
+  height: 150px;
+}
+
+#div4 {
+  background-color: royalblue;
+  height: 150px;
+}
+
+#divtest {
+  background-color: darkturquoise;
+  height: 100%;
+}
+
+#divtest2 {
+  background-color: peachpuff;
+  height: 150px;
+}
