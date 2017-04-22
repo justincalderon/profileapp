@@ -2,32 +2,26 @@ body {
   margin: auto;
 }
 
-#div1 {
-  background-color: firebrick;
-  height: 100%;
+h3 {
+  color: white;
 }
 
-#div2 {
-  background-color: gold;
-  height: 150px;
+.col {
+  background-color: white;
+  height: 500px;
 }
 
-#div3 {
-  background-color: coral;
-  height: 150px;
+.col-6 {
+  background-image: url(../img/skybg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
-#div4 {
-  background-color: royalblue;
-  height: 150px;
+#form {
+  padding: 150px;
+  padding-top: 15px;
 }
 
-#divtest {
-  background-color: darkturquoise;
-  height: 100%;
-}
-
-#divtest2 {
-  background-color: peachpuff;
-  height: 150px;
+#form > input {
+  display: block;
 }
