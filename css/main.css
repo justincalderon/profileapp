@@ -8,7 +8,7 @@ h3 {
 
 .col {
   background-color: white;
-  height: 500px;
+  height: 100vh;
 }
 
 .col-6 {
@@ -23,5 +23,9 @@ h3 {
 }
 
 #form > input {
+  display: block;
+}
+
+#dropmenu {
   display: block;
 }
