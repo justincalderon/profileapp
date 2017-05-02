@@ -15,10 +15,10 @@
 
   <body>
 
-    <div class="container-fluid">
+    <div id="newProfile" class="container">
       <div class="row">
         <div class="col">
-
+          <!-- extra col left -->
         </div>
         <div class="col-6">
           <h3 class="display-3 text-center">Start a profile</h3>
@@ -30,13 +30,13 @@
 
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="userGender" name="optionsRadios" id="optionsRadios1" value="option1">
+                <input type="radio" class="userGender" name="optionsRadios" id="optionsRadios1" value="male">
                 Male
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="userGender" name="optionsRadios" id="optionsRadios2" value="option2">
+                <input type="radio" class="userGender" name="optionsRadios" id="optionsRadios2" value="female">
                 Female
               </label>
             </div>
@@ -54,27 +54,42 @@
             <select id="dropmenu" class="form-group custom-select form-control-lg">
               <option class="userBirth" selected>Choose</option>
               <option class="userBirth" value="1">Africa</option>
-              <option class="userBirth" value="2">Asia</option>
-              <option class="userBirth" value="3">Australia</option>
-              <option class="userBirth" value="4">Europe</option>
+              <option class="userBirth" value="2">Antarctica</option>
+              <option class="userBirth" value="3">Asia</option>
+              <option class="userBirth" value="4">Australia</option>
+              <option class="userBirth" value="5">Europe</option>
               <option class="userBirth" value="6">North America</option>
               <option class="userBirth" value="7">South America</option>
             </select>
 
             <!-- Button -->
 
-            <button id="sendDataButton" class="btn btn-primary btn-md" type="button" name="button">Continue</button>
+            <button id="sendDataButton" class="btn btn-primary btn-md" type="button">Continue</button>
 
           </form>
         </div>
         <div class="col">
-
+          <!-- extra col right -->
         </div>
+
 
         <!-- Show Page -->
         <div id="results"></div>
-      </div>
+
+      </div> <!-- end of bootstrap row -->
     </div>
+    <div id="updateProfile" class="row"> <!-- new bs row -->
+      <div class="col-md-6 offset-md-3">
+        <h1 class="display-4 text-center">User Profile</h1>
+        <div>
+          <h2 id='newUserName'></h2>
+          <h3 id="newUserGender"></h3>
+          <h3 id="newUserEmail"></h3>
+          <h3 id="newUserPhone"></h3>
+          <h3 id="newUserBirth"></h3>
+        </div>
+      </div>
+    </div> <!-- end of row -->
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
