@@ -23,42 +23,56 @@
         <div class="col-6">
           <h3 class="display-3 text-center">Start a profile</h3>
           <form id="form">
-            <!-- <h5 class="text-center">First Name</h5> -->
-            <input class="form-group form-control form-control-lg" type="text" placeholder="First Name">
-            <!-- <h5 class="text-center">Last Name</h5> -->
-            <input class="form-group form-control form-control-lg" type="text" placeholder="Last Name">
+            <input id="userFirstName" class="form-group form-control form-control-lg" type="text" placeholder="First Name">
+            <input id="userLastName" class="form-group form-control form-control-lg" type="text" placeholder="Last Name">
+
             <!-- Gender Selection -->
-            <div class="form-check form-control-lg">
+
+            <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value=""> Male
+                <input type="radio" class="userGender" name="optionsRadios" id="optionsRadios1" value="option1">
+                Male
               </label>
             </div>
-            <div class="form-check form-control-lg">
+            <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input form-control-lg" type="checkbox" value=""> Female
+                <input type="radio" class="userGender" name="optionsRadios" id="optionsRadios2" value="option2">
+                Female
               </label>
             </div>
+
             <!-- Email -->
-            <input class="form-group form-control form-control-lg" type="text" placeholder="Email Address">
+
+            <input id="userEmail" class="form-group form-control form-control-lg" type="text" placeholder="Email Address">
+
             <!-- Phone Number -->
-            <input class="form-group form-control form-control-lg" type="text" placeholder="Phone Number">
+
+            <input id="userPhone" class="form-group form-control form-control-lg" type="text" placeholder="Phone Number">
+
             <!-- Dropdown Menu -->
+
             <select id="dropmenu" class="form-group custom-select form-control-lg">
-              <option selected>Choose</option>
-              <option value="1">Africa</option>
-              <option value="2">Asia</option>
-              <option value="3">Australia</option>
-              <option value="3">Europe</option>
-              <option value="3">North America</option>
-              <option value="3">South America</option>
+              <option class="userBirth" selected>Choose</option>
+              <option class="userBirth" value="1">Africa</option>
+              <option class="userBirth" value="2">Asia</option>
+              <option class="userBirth" value="3">Australia</option>
+              <option class="userBirth" value="4">Europe</option>
+              <option class="userBirth" value="6">North America</option>
+              <option class="userBirth" value="7">South America</option>
             </select>
+
             <!-- Button -->
-            <button class="btn btn-primary btn-md" type="button" name="button">Continue</button>
+
+            <button id="sendDataButton" class="btn btn-primary btn-md" type="button" name="button">Continue</button>
+
           </form>
         </div>
         <div class="col">
 
         </div>
+
+        <!-- Show Page -->
+        <div id="results"></div>
       </div>
     </div>
 
