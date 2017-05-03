@@ -1,14 +1,15 @@
 // create function to get user data
 function getUserData() {
-  // create variables to store first name, last name,
+  // create variables to store first name, last name, email
   var userFirstName = document.getElementById("userFirstName").value
   var userLastName = document.getElementById("userLastName").value
+  var userEmail = document.getElementById("userEmail").value
 
   // create variables for gender selection
   var radio1 = document.getElementById("radio1").value
   var radio2 = document.getElementById("radio2").value
 
-  // validate users input
+  // validate users selection
   if (userFirstName == "") {
     results.className = "alert alert-danger"
     results.textContent = "You forgot to add your first name."
@@ -16,8 +17,14 @@ function getUserData() {
   };
 
   if (userLastName == "") {
-    results.className = "failure"
+    results.className = "alert alert-danger"
     results.textContent = "You forgot to add your last name."
+    return
+  };
+
+  if (userEmail == "") {
+    results.className = "alert alert-danger"
+    results.textContent = "You forgot to add your email."
     return
   };
 
@@ -26,11 +33,11 @@ function getUserData() {
   } else if (document.getElementById("radio2").checked) {
     console.log(radio2);
   } else if (radio1 || radio2 == undefined) {
-    results.className = "failure";
+    results.className = "alert alert-danger";
     results.textContent = "Please choose a gender."
-  }
+  };
 
-  // hide updateProfile
-  document.getElementById("updateProfile").style.display = "none"
+  // hide
 }
+
 document.getElementById("sendDataButton").addEventListener("click", getUserData);

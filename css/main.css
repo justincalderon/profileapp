@@ -33,3 +33,7 @@ h3 {
 .failure {
   color: tomato;
 }
+
+#results {
+  margin-top: 25px;
+}
