@@ -15,12 +15,12 @@
 
   <body>
 
-    <div id="newProfile" class="container">
+    <div class="container">
       <div class="row">
         <div class="col">
           <!-- extra col left -->
         </div>
-        <div class="col-6">
+        <div id="newProfile" class="col-6">
           <h3 class="display-3 text-center">Start a profile</h3>
           <form id="form">
             <input id="userFirstName" class="form-group form-control form-control-lg" type="text" placeholder="First Name">
@@ -29,15 +29,15 @@
             <!-- Gender Selection -->
 
             <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="userGender" name="optionsRadios" id="optionsRadios1" value="male">
-                Male
+              <label class="custom-control custom-radio">
+                <input id="radio1" name="radio" type="radio" class="custom-control-input" value="male">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Male</span>
               </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="userGender" name="optionsRadios" id="optionsRadios2" value="female">
-                Female
+              <label class="custom-control custom-radio">
+                <input id="radio2" name="radio" type="radio" class="custom-control-input" value="female">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Female</span>
               </label>
             </div>
 
