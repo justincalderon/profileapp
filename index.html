@@ -29,13 +29,13 @@
             <!-- Gender Selection -->
 
             <div class="form-check">
-              <label class="custom-control custom-radio">
-                <input id="radio1" name="radio" type="radio" class="custom-control-input" value="male">
+              <label class="custom-control custom-checkbox">
+                <input id="radio1" name="radio" type="checkbox" class="custom-control-input" value="male">
                 <span class="custom-control-indicator"></span>
                 <span class="custom-control-description">Male</span>
               </label>
-              <label class="custom-control custom-radio">
-                <input id="radio2" name="radio" type="radio" class="custom-control-input" value="female">
+              <label class="custom-control custom-checkbox">
+                <input id="radio2" name="radio" type="checkbox" class="custom-control-input" value="female">
                 <span class="custom-control-indicator"></span>
                 <span class="custom-control-description">Female</span>
               </label>
@@ -50,16 +50,16 @@
             <input id="userPhone" class="form-group form-control form-control-lg" type="text" placeholder="Phone Number">
 
             <!-- Dropdown Menu -->
-
-            <select id="dropmenu" class="form-group custom-select form-control-lg">
-              <option class="userBirth" selected>Choose</option>
-              <option class="userBirth" value="1">Africa</option>
-              <option class="userBirth" value="2">Antarctica</option>
-              <option class="userBirth" value="3">Asia</option>
-              <option class="userBirth" value="4">Australia</option>
-              <option class="userBirth" value="5">Europe</option>
-              <option class="userBirth" value="6">North America</option>
-              <option class="userBirth" value="7">South America</option>
+            <!-- fix dropmenu JS functionality -->
+            <select name="Continent" id="birthMenu" class="custom-select">
+              <option>Choose</option>
+              <option value="Africa">Africa</option>
+              <option value="Antarctica">Antarctica</option>
+              <option value="Asia">Asia</option>
+              <option value="Australia">Australia</option>
+              <option value="Europe">Europe</option>
+              <option value="North America">North America</option>
+              <option value="South America">South America</option>
             </select>
 
             <!-- Button -->

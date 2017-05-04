@@ -26,7 +26,7 @@ h3 {
   display: block;
 }
 
-#dropmenu {
+#birthMenu {
   display: block;
 }
 
@@ -36,4 +36,8 @@ h3 {
 
 #results {
   margin-top: 25px;
+}
+
+#birthMenu {
+  margin-bottom: 25px;
 }

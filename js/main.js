@@ -10,6 +10,9 @@ function getUserData() {
   var radio1 = document.getElementById("radio1").value
   var radio2 = document.getElementById("radio2").value
 
+  // create variables for birth selection
+  var userBirth = document.getElementById("birthMenu").value
+
   // validate users selection
   // FIRST NAME
   if (userFirstName == "") {
@@ -45,6 +48,16 @@ function getUserData() {
     results.textContent = "You forgot to add your phone number."
     return
   };
+  // CONTINENT OF BIRTH
+  // uc
+  if (userBirth == undefined) {
+    results.className = "alert alert-danger"
+    results.textContent = "You forgot to choose your birthplace."
+  } else if (document.getElementById("birthMenu").selected) {
+    console.log(userBirth);
+  }
+
+
 
   // show updateProfile and hide newProfile
     document.getElementById("updateProfile").hidden=false;
@@ -52,3 +65,4 @@ function getUserData() {
 }
 
 document.getElementById("sendDataButton").addEventListener("click", getUserData);
+console.log(birthMenu.length);
