@@ -10,6 +10,10 @@ function getUserData() {
   var radio1 = document.getElementById("radio1").value
   var radio2 = document.getElementById("radio2").value
 
+  // create variables for continent of birth
+  var userBirth = document.getElementById("birthMenu")
+  var userBirthSelect = userBirth.options[userBirth.selectedIndex].value
+
   // validate users selection
   // FIRST NAME
   if (userFirstName == "") {
@@ -46,9 +50,13 @@ function getUserData() {
     return
   };
   // CONTINENT OF BIRTH
-  // uc
-  var userBirth = document.getElementById("birthMenu").options.length;
-  console.log(userBirth);
+
+  if (userBirthSelect == "Choose") {
+    results.className = "alert alert-danger"
+    results.textContent = "You forgot to choose your birthplace."
+    return
+  }
+  console.log(userBirthSelect);
 
 
 
