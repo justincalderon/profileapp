@@ -1,6 +1,6 @@
 // create function to get user data
 function getUserData() {
-  // create variables to store first name, last name, email
+  // create variables to store first name, last name, email, and gender
   var userFirstName = document.getElementById("userFirstName").value
   var userLastName = document.getElementById("userLastName").value
   var userEmail = document.getElementById("userEmail").value
@@ -36,14 +36,17 @@ function getUserData() {
 
   // GENDER SELECTION
   if (document.getElementById("radio1").checked) {
+    newUserGender.innerText = "Gender : " + radio1
     console.log(radio1);
   } else if (document.getElementById("radio2").checked) {
+    newUserGender.innerText = "Gender : " + radio2
     console.log(radio2);
   } else if (radio1 || radio2 == undefined) {
     results.className = "alert alert-danger";
     results.textContent = "Please choose a gender."
     return
   };
+
 
 
   // EMAIL
@@ -79,6 +82,7 @@ function getUserData() {
     name: userFirstName + " " + userLastName,
     email: userEmail,
     phone: userPhone,
+    birth: userBirthSelect
   };
   console.log(userProfile);
 
@@ -86,6 +90,7 @@ function getUserData() {
   newUserName.innerText = "Welcome " + userFirstName + " " + userLastName
   newUserEmail.innerText = "Email : " + userEmail
   newUserPhone.innerText = "Phone : " + userPhone
+  newUserBirth.innerText = "Birthplace : " + userBirthSelect
 
 
   // show updateProfile and hide newProfile
